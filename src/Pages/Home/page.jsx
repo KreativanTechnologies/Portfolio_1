@@ -1,9 +1,17 @@
 import React from 'react'
+import Hero from '../../components/HomePageComponents/Hero'
+import AboutMe from '../../components/HomePageComponents/AboutMe'
+import Card from '../../components/HomePageComponents/Card'
 
-const page = () => {
+const Home = () => {
   return (
-    <div>page</div>
+    <>
+
+    {/* <Hero/> */}
+    <AboutMe/>
+    <Card/>
+    </>
   )
 }
 
-export default page
+export default Home
