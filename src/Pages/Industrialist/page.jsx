@@ -5,12 +5,10 @@ const page = () => {
     <div>
       <Navbar />
 
-<div>
+
       <Hero />
-</div>
-      <div>
         <Footer />
-      </div>
+      
     </div>
   )
 }
