@@ -3,7 +3,7 @@
 const Hero = () => {
   // You can later replace this with API response or props
   const heroData = {
-    bgImage: "/Images/SocialWork/Image2.png",
+    bgImage: "Images/SocialWork/Image2.png",
     titleLine1: "Making a Difference,",
     titleLine2: "One Life at a Time",
     buttonText: "Join The Mission",
