@@ -1,5 +1,9 @@
+import Navbar from '../../components/Navbar'
+import Footer from '../../Components/Footer'
 const ContactForm = () => {
   return (
+    <>
+    <Navbar />
     <div className="responsivewidth min-h-screen  py-12 px-4 relative mt-20 p-10">
       <div className="max-w-2xl mx-auto ">
      
@@ -81,6 +85,8 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
