@@ -10,7 +10,7 @@ export default function SocialWork({
     },
     {
       type: "image",
-      src: "iImages/SocialWork/row_2_col_2.jpg",
+      src: "images/SocialWork/row_2_col_2.jpg",
       alt: "Work 2",
       className: "w-full h-72 object-cover rounded-lg break-inside-avoid"
     },
