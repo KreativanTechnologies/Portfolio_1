@@ -1,19 +1,16 @@
 import React from 'react'
-import Navbar from '../../components/Navbar.jsx'
-import Footer from '../../components/Footer.jsx'
-import Hero from '../../components/Ind/Hero.jsx'
+import Hero from '../../components/BuilderComponents/Hero'
+import Section2 from '../../components/BuilderComponents/Section2'
+import Section3 from '../../components/BuilderComponents/Section3'
+
 const page = () => {
   return (
-    <div>
-      <Navbar />
-
-      <div>
-        <Hero />
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+    <>
+      
+    <Hero/>
+    <Section2/>
+    <Section3/>
+    </>
   )
 }
 
