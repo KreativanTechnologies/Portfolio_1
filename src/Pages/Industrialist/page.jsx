@@ -5,14 +5,14 @@ import Hero from '../../components/Ind/Hero.jsx'
 const page = () => {
   return (
     <div>
-       <Navbar />
-           
-            <div>
-<Hero/>
-            </div>
-            <div>
-              <Footer />
-            </div>
+      <Navbar />
+
+<div>
+      <Hero />
+</div>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,59 +1,58 @@
-"use client"
+import React from 'react';
 
-export default function RamsCityHero() {
+export default function Hero({
+  heading = 'LOREM IPSUM IS SIMPLY DUMMY',
+  subtext = 'TEXT OF THE PRINTING',
+  description = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text ever`,
+  buttonText = 'Learn More',
+  buttonUrl = '#',
+  gradient = [
+    '#000507CC 80%',
+    '#3C3D3FC4 70%',
+    '#010505B0 69%',
+    '#00000091 57%',
+  ],
+}) {
+  const gradientStyle = `linear-gradient(180deg, ${gradient.join(', ')})`;
+
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header with Logo */}
-      <header className="p-6">
-        <div className="flex items-center">
-          <div className="text-2xl font-bold text-gray-800">
-            RAMS<span className="text-orange-500">CITY</span>
-          </div>
-        </div>
-      </header>
-
-      {/* Main Hero Section */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-            <div className="space-y-8 flex flex-col justify-center">
-            <div className="text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Building smart spaces for smart living.
-              </h1>
-            </div>
-
-            {/* Decorative Dot Pattern */}
-            <div className="flex justify-end pt-12 ">
-              <div className="grid grid-cols-5 gap-1">
-                {[...Array(25)].map((_, i) => (
-                  <div key={i} className="w-3 h-3 bg-gray-800 rounded-full" />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="./Rectangle 2.png"
-                alt="Modern residential building with green architecture and balconies"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -left-4 grid grid-cols-3 gap-1">
-              <div className="grid grid-cols-5 gap-1">
-                {[...Array(25)].map((_, i) => (
-                  <div key={i} className="w-3 h-3 bg-gray-300 rounded-full" />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+    <div
+      className="relative w-full min-h-screen overflow-hidden flex justify-center items-center px-4 py-8"
+      style={{
+        background: gradientStyle,
+        backgroundBlendMode: 'multiply',
+      }}
+    >
+      <div
+        className="flex flex-col items-center text-white text-center w-full "
+        style={{
+          fontFamily: "'DM Sans', sans-serif",
+        }}
+      >
+        <h1 className="uppercase font-extrabold leading-[100%] tracking-[0%]
+          text-[32px] sm:text-[40px] md:text-[45px] lg:text-[50.47px]">
+          {heading}
+        </h1>
+        <h2 className="uppercase font-extrabold leading-[100%] tracking-[0%] mt-1
+          text-[32px] sm:text-[40px] md:text-[45px] lg:text-[50.47px]">
+          {subtext}
+        </h2>
+        <p className="mt-4 mb-6 font-semibold tracking-[0%]
+          text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14.34px]
+          leading-[22px] md:leading-[24px] lg:leading-[26.47px] max-w-[800px]">
+          {description}
+        </p>
+        <a
+          href={buttonUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 px-6 py-3 bg-white text-black rounded-md font-semibold 
+            hover:bg-gray-200 transition duration-300 text-sm sm:text-base"
+        >
+          {buttonText}
+        </a>
       </div>
     </div>
-  )
+  );
 }
