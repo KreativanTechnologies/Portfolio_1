@@ -1,8 +1,23 @@
 import React from 'react'
+import Navbar from '../../components/Navbar'
+import Footer from '../../Components/Footer'
+import Hero from '../../components/MyVision/HeroCrousel'
+import Second from '../../components/MyVision/SecondSession'
+import Third from '../../components/MyVision/ThirdSession'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Navbar />
+      <Hero />
+      <div className='pt-10'>
+      <Second />
+      </div>
+      <div>
+      <Third />
+      </div>
+      <Footer />
+    </div>
   )
 }
 
