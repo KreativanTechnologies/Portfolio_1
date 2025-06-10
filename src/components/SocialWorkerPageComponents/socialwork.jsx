@@ -4,19 +4,19 @@ export default function SocialWork({
     // Left column items
     {
       type: "image",
-      src: "/Images/SocialWork/row_1_col_1.jpg",
+      src: "/images/SocialWork/row_1_col_1.jpg",
       alt: "Work 1",
       className: "w-full h-64 object-cover rounded-lg break-inside-avoid"
     },
     {
       type: "image",
-      src: "/Images/SocialWork/row_2_col_2.jpg",
+      src: "iImages/SocialWork/row_2_col_2.jpg",
       alt: "Work 2",
       className: "w-full h-72 object-cover rounded-lg break-inside-avoid"
     },
     {
       type: "featured",
-      image: "/Images/SocialWork/row_3_col_1.jpg",
+      image: "/images/SocialWork/row_3_col_1.jpg",
       alt: "Work 3",
       overlayTitle: "LOCAL HEROES.",
       overlayText: "A passionate social worker, he empowers underserved youth through education, health.",
@@ -26,35 +26,35 @@ export default function SocialWork({
     },
     {
       type: "image",
-      src: "/Images/SocialWork/row_4_col_1.jpg",
+      src: "/images/SocialWork/row_4_col_1.jpg",
       alt: "Work 4",
       className: "w-full h-64 object-cover rounded-lg break-inside-avoid"
     },
     // Right column items
     {
       type: "image",
-      src: "/Images/SocialWork/row_1_col_2.jpg",
+      src: "/images/SocialWork/row_1_col_2.jpg",
       alt: "Work 5",
       className: "w-full h-80 object-cover rounded-lg break-inside-avoid",
       column: "right"
     },
     {
       type: "image",
-      src: "/Images/SocialWork/row_2_col_1.png",
+      src: "/images/SocialWork/row_2_col_1.png",
       alt: "Work 6",
       className: "w-full h-96 object-cover rounded-lg break-inside-avoid",
       column: "right"
     },
     {
       type: "image",
-      src: "/Images/SocialWork/row_3_col_3.jpg",
+      src: "/images/SocialWork/row_3_col_3.jpg",
       alt: "Work 7",
       className: "w-full h-96 object-cover rounded-lg break-inside-avoid",
       column: "right"
     },
     {
       type: "image",
-      src: "/Images/SocialWork/row_4_col_2.jpg",
+      src: "/images/SocialWork/row_4_col_2.jpg",
       alt: "Work 8",
       className: "h-[1046px] object-cover rounded-lg mx-auto break-inside-avoid",
       column: "right"
