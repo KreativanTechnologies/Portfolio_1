@@ -2,18 +2,17 @@ import React from 'react'
 import Hero from '../../components/Ind/Hero';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import MidSection from '../../components/Ind/Midsection';
 
 
 const page = () => {
   return (
-    <div>
-      <Navbar />
-
-
-      <Hero />
-        <Footer />
-      
-    </div>
+    <>
+    <Navbar />
+    <Hero />
+    <MidSection />
+    <Footer/>
+    </>
   )
 }
 
