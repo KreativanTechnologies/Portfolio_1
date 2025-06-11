@@ -1,5 +1,8 @@
 import React from 'react'
-import Hero from '../../components/Ind/Hero'
+import Hero from '../../components/Ind/Hero';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
 
 const page = () => {
   return (
