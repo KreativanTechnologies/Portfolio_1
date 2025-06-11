@@ -1,10 +1,10 @@
 import React from 'react';
 
 const cardImages = [
-  { id: 1, image: '/images/img1.png' },
-  { id: 2, image: '/images/img2.png' },
-  { id: 3, image: '/images/img3.png' },
-  { id: 4, image: '/images/img4.png' },
+  // { id: 1, image: '/images/img1.png' },
+  // { id: 2, image: '/images/img2.png' },
+  // { id: 3, image: '/images/img3.png' },
+  // { id: 4, image: '/images/img4.png' },
 ];
 
 const CardsImage = () => {
