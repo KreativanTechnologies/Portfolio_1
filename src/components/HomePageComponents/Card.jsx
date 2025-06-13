@@ -24,7 +24,7 @@ const Card = () => {
   ]
 
   return (
-    <div className="mt-20 text-white flex flex-col md:flex-row">
+    <div className="mt-20 text-white flex flex-col md:flex-row mb-10">
       {/* Left Side - Works */}
       <div className="w-full md:w-[20%] mb-6 md:mb-0 px-10">
         <h3 className="text-black text-4xl font-bold md:top-28 md:text-left text-center">Works</h3>

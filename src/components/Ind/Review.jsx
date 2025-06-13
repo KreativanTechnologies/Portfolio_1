@@ -36,7 +36,7 @@ const Review = () => {
   const { image, name, text, stars } = reviews[currentIndex];
 
   return (
-    <section className="w-full flex flex-col items-center py-16 px-4 bg-white">
+    <section className="w-full flex flex-col items-center py-16 px-10 bg-white">
       <h2 className="text-2xl font-semibold mb-8">LOREM IPSUM IS SIMPLY</h2>
 
       <div className="flex flex-wrap items-center justify-center gap-6 w-full max-w-5xl">

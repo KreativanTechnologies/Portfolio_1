@@ -2,7 +2,7 @@
 
 export default function RamsCityHero() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className=" bg-white">
       {/* Header with Logo */}
       <header className="p-6">
         <div className="flex items-center">

@@ -1,10 +1,10 @@
 import React from 'react';
 
 const cardImages = [
-  // { id: 1, image: '/images/img1.png' },
-  // { id: 2, image: '/images/img2.png' },
-  // { id: 3, image: '/images/img3.png' },
-  // { id: 4, image: '/images/img4.png' },
+  { id: 1, image: '/images/img1.png' },
+  { id: 2, image: '/images/img2.png' },
+  { id: 3, image: '/images/img3.png' },
+  { id: 4, image: '/images/img4.png' },
 ];
 
 const CardsImage = () => {
@@ -17,7 +17,7 @@ const CardsImage = () => {
               <img
                 src={card.image}
                 alt={`Card ${card.id}`}
-                className="w-full h-full object-cover"
+                className="w-20 object-cover"
               />
             </div>
             {/* Render divider only between cards */}
