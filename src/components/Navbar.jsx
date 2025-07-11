@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react"
 import { Link, useLocation } from "react-router-dom"
 
 // Memoized NavItem component
-const NavItem = memo(({ number, label, isMobile }) => {
+const NavItem = memo(({ number, label, path, isMobile }) => {
   const location = useLocation()
-  const path = label === "Home" ? "/" : "/" + label.toLowerCase().replace(/\s+/g, "_")
   const isActive = location.pathname === path
   const baseClasses = isActive ? "text-gray-900" : "text-gray-400"
 
@@ -42,8 +41,9 @@ const MobileMenu = memo(({ isOpen, navItems }) => {
         {navItems.map((item) => (
           <NavItem
             key={item.number}
-            number={item.number}
+            // number={item.number}
             label={item.label}
+            path={item.path}
             isMobile={true}
           />
         ))}
@@ -63,12 +63,12 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { number: "01", label: "Home" },
-    { number: "02", label: "My Visions" },
-    { number: "03", label: "Industrialist" },
-    { number: "04", label: "Builder" },
-    { number: "05", label: "Social Worker" },
-    { number: "06", label: "Contact me" },
+    { number: "01", label: "Home", path: "/" },
+    { number: "02", label: "My Visions", path: "/my_visions" },
+    { number: "03", label: "Magnate", path: "/magnate" },
+    { number: "04", label: "Estate Developer", path: "/estate" },
+    { number: "05", label: "Lions Club", path: "/lions_club" },
+    { number: "06", label: "Reach Me", path: "/reach_me" },
   ]
 
   return (
@@ -78,7 +78,7 @@ export default function Navbar() {
           {/* Hamburger Menu Button */}
           <button
             onClick={toggleMenu}
-            className="flex items-center justify-center w-8 h-8 text-gray-600 hover:text-gray-900 transition-colors"
+            className="flex items-center justify-center w-8 h-8 text-gray-600 hover:text-gray-900 transition-colors md:hidden"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -91,8 +91,9 @@ export default function Navbar() {
             {navItems.map((item) => (
               <NavItem
                 key={item.number}
-                number={item.number}
+                // number={item.number}
                 label={item.label}
+                path={item.path}
                 isMobile={false}
               />
             ))}
